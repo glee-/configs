@@ -7,7 +7,7 @@ parse_folder() {
 } 
 
 
-export PS1="\[\033[35m\]λ \[\033[36m\]\$(parse_folder \W)\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
+export PS1="\n\[\033[35m\]λ \[\033[36m\]\$(parse_folder \W)\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
 export PS2="    : "
 export ANDROID_HOME=/Users/Arthur/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$PATH
