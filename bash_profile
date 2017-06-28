@@ -6,6 +6,10 @@ parse_folder() {
     echo $1 | sed -e 's/^.*\///'
 } 
 
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 
 export PS1="\n\[\033[35m\]λ \[\033[36m\]\$(parse_folder \W)\[\033[32m\]\$(parse_git_branch)\[\033[00m\]: "
 export PS2="    : "
